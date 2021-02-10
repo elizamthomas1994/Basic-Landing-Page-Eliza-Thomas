@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitars 🎸</title>
+    <style>
+        body {
+            background: lightgrey;
+            margin: 0px 300px 0px 300px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(89, 112, 136);
+            line-height: 60px;
+        }
+
+        ul {
+            font-size: 20px;
+            list-style: "🎸 ";
+        }
+
+        li {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(89, 112, 136);
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 20px;
+        }
+
+        .info {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            font-size: 20px;
+        }
+
+        .music {
+            text-align: center;
+            font-family: monospace;
+            font-size: 14px;
+        }
+
+        .guitar {
+            color: rgb(89, 112, 136);
+            font-weight: bold;
+        }
+
+        iframe {
+            display: block;
+            margin: 0 auto;
+        }
+
+        a {
+            color: rgb(89, 112, 136);
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            font-family: monospace;
+            font-size: 14px;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(89, 112, 136);
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 15px 80px 15px 80px;
+            font-size: 18px;
+            border-radius: 30px;
+            background-color: rgb(89, 112, 136);
+            color: white;
+            box-shadow: 5px 3px 3px black;
+            transition: 200ms ease-in-out;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: lightgrey;
+            color: rgb(89, 112, 136);
+        }
+
+        .programmer {
+            font-family: monospace;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>🎸<br />Why The Guitar Is An Incredible Instrument</h1>
+        <ul>
+            <li><strong>Versatility</strong></li>
+            <p class="info">The guitar is an instrument that can suit a wide range of genres, from rock, metal and
+                blues, to
+                jazz and country.
+                You can play either <span class="guitar"> acoustic </span> guitars or <span class="guitar"> electric
+                </span> guitars to diversify the style of play.
+                While most guitars contain 6 strings, some can even come with 7 or 8 for further variety!</p>
+            <br />
+            <li><strong>Popularity</strong></li>
+            <p class="info">Because the guitar is used by so many artists in so many different genres of music,
+                when music learners want to start playing their favorite songs, they often find that the guitar is the
+                best
+                place to start. The guitar also got a further boost in popularity thanks to games like <em> Guitar
+                    Hero</em> and
+                <em> Rock Band</em>.
+            </p>
+            <br />
+            <li><strong>Portability</strong></li>
+            <p class="info">As far as portability goes, you can’t really beat the guitar. The acoustic guitar
+                especially, can be
+                carried anywhere with ease.
+                It's lightweight, and can fit easily in the trunk of a car or even the overhead bin of an airplane.
+                After
+                transport, it requires little maintenance. All you need to do is tune it, and you're ready to play!</p>
+            <br />
+            <li><strong>Approachability</strong></li>
+            <p class="info">It is relatively easy to learn to play the first note, scale or chord on a guitar.
+                The frets of the guitar provide a clear division between notes. In fact, one does not even need to know
+                precisely where
+                those points of division are. Unlike an instrument such as violin, which has no frets, it is relatively
+                easy to
+                play a
+                correct note on the guitar.</p>
+        </ul>
+        <img src=https://elements-video-cover-images-0.imgix.net/files/5f044d09-d90e-4feb-a5a9-f94cfa11b8ed/inline_image_preview.jpg?auto=compress%2Cformat&fit=min&h=394&w=700&s=f9a366cab78311c426c9e5ae2ed9d15c
+            alt="Woman playing guitar" width=750>
+        <hr />
+        <p class="music">🎸 Listen to some guitar classics below! 🎸
+        </p>
+        <iframe src="https://open.spotify.com/embed/playlist/4uXQTlssqK2Jy5DejGCUMm" width="300" height="380"
+            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br />
+        <a href="https://en.wikipedia.org/wiki/Guitar" target="_blank">
+            Click here to learn more about the guitar!
+        </a>
+        <h2>Want guitar news? Sign up below! 👇</h2>
+        <button>⚡Sign me up!⚡</button>
+        <p class="programmer">Programmed by Eliza Thomas</p>
+    </div>
+    <script>
+        function contactUs() {
+            let name = prompt("What is your name?");
+            let email = prompt("What is your email address?");
+            let guitarType = prompt("What guitar type are you interested in? Acoustic or Electric?");
+            guitarType = guitarType.toLowerCase();
+            guitarType = guitarType.trim();
+            if ((guitarType === "acoustic") || (guitarType === "electric")) {
+                alert("Thanks " + name + "! We'll keep you updated with news about the " + guitarType + " guitar! 🎸");
+            } else {
+                alert("Sorry " + name + "! We don't recognise your requested guitar type! 😞 Please try again!");
+            }
+        }
+        let infoButton = document.querySelector("button");
+        infoButton.addEventListener("click", contactUs)
+    </script>
+</body>
+
+</html>
