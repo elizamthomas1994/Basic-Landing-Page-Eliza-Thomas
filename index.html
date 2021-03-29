@@ -8,7 +8,6 @@
     <style>
         body {
             background: lightgrey;
-            margin: 0px 300px 0px 300px;
         }
 
         h1 {
@@ -16,6 +15,10 @@
             font-family: Arial, Helvetica, sans-serif;
             color: rgb(89, 112, 136);
             line-height: 60px;
+        }
+
+        .information {
+            margin: 0px 300px 0px 300px;
         }
 
         ul {
@@ -56,6 +59,10 @@
             margin: 0 auto;
         }
 
+        .spotify {
+            margin-bottom: 20px;
+        }
+
         a {
             color: rgb(89, 112, 136);
             display: block;
@@ -89,66 +96,103 @@
             color: rgb(89, 112, 136);
         }
 
-        .programmer {
+        .coder {
             font-family: monospace;
             text-align: center;
             font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .information {
+                margin: 0px;
+            }
+
+            .image {
+                display: none;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <h1>🎸<br />Why The Guitar Is An Incredible Instrument</h1>
-        <ul>
-            <li><strong>Versatility</strong></li>
-            <p class="info">The guitar is an instrument that can suit a wide range of genres, from rock, metal and
-                blues, to
-                jazz and country.
-                You can play either <span class="guitar"> acoustic </span> guitars or <span class="guitar"> electric
-                </span> guitars to diversify the style of play.
-                While most guitars contain 6 strings, some can even come with 7 or 8 for further variety!</p>
-            <br />
-            <li><strong>Popularity</strong></li>
-            <p class="info">Because the guitar is used by so many artists in so many different genres of music,
-                when music learners want to start playing their favorite songs, they often find that the guitar is the
-                best
-                place to start. The guitar also got a further boost in popularity thanks to games like <em> Guitar
-                    Hero</em> and
-                <em> Rock Band</em>.
-            </p>
-            <br />
-            <li><strong>Portability</strong></li>
-            <p class="info">As far as portability goes, you can’t really beat the guitar. The acoustic guitar
-                especially, can be
-                carried anywhere with ease.
-                It's lightweight, and can fit easily in the trunk of a car or even the overhead bin of an airplane.
-                After
-                transport, it requires little maintenance. All you need to do is tune it, and you're ready to play!</p>
-            <br />
-            <li><strong>Approachability</strong></li>
-            <p class="info">It is relatively easy to learn to play the first note, scale or chord on a guitar.
-                The frets of the guitar provide a clear division between notes. In fact, one does not even need to know
-                precisely where
-                those points of division are. Unlike an instrument such as violin, which has no frets, it is relatively
-                easy to
-                play a
-                correct note on the guitar.</p>
-        </ul>
-        <img src=https://elements-video-cover-images-0.imgix.net/files/5f044d09-d90e-4feb-a5a9-f94cfa11b8ed/inline_image_preview.jpg?auto=compress%2Cformat&fit=min&h=394&w=700&s=f9a366cab78311c426c9e5ae2ed9d15c
-            alt="Woman playing guitar" width=750>
+    <div class="content">
+        <h1>
+            <div class="emoji">🎸</div>
+            <div class="title">Why The Guitar Is An Incredible Instrument</div>
+        </h1>
+        <div class="information">
+            <ul>
+                <li><strong>Versatility</strong></li>
+                <p class="info">The guitar is an instrument that can suit a wide range of genres, from rock, metal and
+                    blues, to
+                    jazz and country.
+                    You can play either <span class="guitar"> acoustic </span> guitars or <span class="guitar"> electric
+                    </span> guitars to diversify the style of play.
+                    While most guitars contain 6 strings, some can even come with 7 or 8 for further variety!</p>
+                <br />
+                <li><strong>Popularity</strong></li>
+                <p class="info">Because the guitar is used by so many artists in so many different genres of music,
+                    when music learners want to start playing their favorite songs, they often find that the guitar is
+                    the best
+                    place to start. The guitar also got a further boost in popularity thanks to games like <em> Guitar
+                        Hero</em> and
+                    <em> Rock Band</em>.
+                </p>
+                <br />
+                <li><strong>Portability</strong></li>
+                <p class="info">As far as portability goes, you can’t really beat the guitar. The acoustic guitar
+                    especially, can be
+                    carried anywhere with ease.
+                    It's lightweight, and can fit easily in the trunk of a car or even the overhead bin of an airplane.
+                    After
+                    transport, it requires little maintenance. All you need to do is tune it, and you're ready to play!
+                </p>
+                <br />
+                <li><strong>Approachability</strong></li>
+                <p class="info">It is relatively easy to learn to play the first note, scale or chord on a guitar.
+                    The frets of the guitar provide a clear division between notes. In fact, one does not even need to
+                    know
+                    precisely where
+                    those points of division are. Unlike an instrument such as violin, which has no frets, it is
+                    relatively easy to
+                    play a
+                    correct note on the guitar.</p>
+            </ul>
+        </div>
+        <div class="image">
+            <img src=https://elements-video-cover-images-0.imgix.net/files/5f044d09-d90e-4feb-a5a9-f94cfa11b8ed/inline_image_preview.jpg?auto=compress%2Cformat&fit=min&h=394&w=700&s=f9a366cab78311c426c9e5ae2ed9d15c
+                alt="Woman playing guitar">
+        </div>
         <hr />
-        <p class="music">🎸 Listen to some guitar classics below! 🎸
-        </p>
-        <iframe src="https://open.spotify.com/embed/playlist/4uXQTlssqK2Jy5DejGCUMm" width="300" height="380"
-            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <br />
-        <a href="https://en.wikipedia.org/wiki/Guitar" target="_blank">
-            Click here to learn more about the guitar!
-        </a>
-        <h2>Want guitar news? Sign up below! 👇</h2>
-        <button>⚡Sign me up!⚡</button>
-        <p class="programmer">Programmed by Eliza Thomas</p>
+        <div class="spotify">
+            <p class="music">
+                🎸 Listen to some guitar classics below! 🎸
+            </p>
+            <iframe src="https://open.spotify.com/embed/playlist/4uXQTlssqK2Jy5DejGCUMm" width="300" height="380"
+                frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class="wikilink">
+            <a href="https://en.wikipedia.org/wiki/Guitar" target="_blank">
+                Click here to learn more about the guitar!
+            </a>
+        </div>
+        <div class="subscribe">
+            <h2>
+                Want guitar news? Sign up below! 👇
+            </h2>
+            <button>
+                ⚡Sign me up!⚡
+            </button>
+        </div>
+        <div class="coder">
+            <p>
+                Programmed by Eliza Thomas
+            </p>
+        </div>
     </div>
     <script>
         function contactUs() {
@@ -167,5 +211,4 @@
         infoButton.addEventListener("click", contactUs)
     </script>
 </body>
-
 </html>
